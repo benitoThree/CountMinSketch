@@ -1,0 +1,13 @@
+[package]
+name = "TimeSeriesCountMinSketch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+seahash = "4.1.0"
+rand = "0.8.4"
+crossbeam = "0.8"
+array-init = "2.0.0"
+rayon = "1.5"
