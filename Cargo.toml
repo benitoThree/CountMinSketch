@@ -1,5 +1,5 @@
 [package]
-name = "TimeSeriesCountMinSketch"
+name = "time_series_count_min_sketch"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,6 +8,12 @@ edition = "2021"
 [dependencies]
 seahash = "4.1.0"
 rand = "0.8.4"
-crossbeam = "0.8"
 array-init = "2.0.0"
 rayon = "1.5"
+derive_more = "0.99.17"
+fragile = "1.1.0"
+crossbeam = "0.8.1"
+
+[profile.dev]
+codegen-units = 1
+lto = true
